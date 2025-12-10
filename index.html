@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Cart | Vanilla JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">SI 579 • Vanilla JS</p>
+        <h1>Simple Cart</h1>
+        <p class="lede">Add basics to your basket and watch totals update in real time.</p>
+      </div>
+      <div class="badge">Built by Omer Tafveez (omertaf)</div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Products</h2>
+          <p class="muted">Click a button to add an item.</p>
+        </div>
+        <div id="product-list" class="product-list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Cart</h2>
+        </div>
+        <div id="cart-empty" class="muted">Cart is empty. Add something!</div>
+        <ul id="cart-items" class="cart-items"></ul>
+        <div class="totals" id="totals">
+          <div>
+            <span>Items</span>
+            <strong id="item-count">0</strong>
+          </div>
+          <div>
+            <span>Subtotal</span>
+            <strong id="subtotal">$0</strong>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="buy-cart" class="buy-btn" type="button" disabled>Buy</button>
+          <button id="clear-cart" class="clear-btn" type="button">Clear cart</button>
+        </div>
+        <p id="purchase-message" class="muted purchase-message"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
